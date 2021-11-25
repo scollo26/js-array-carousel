@@ -30,13 +30,20 @@ let containerImg = document.querySelector( '.container-img .position-relative');
 
 
 
+
 for(let i = 0; i < items.length; i++){
     
     let image = `<img class="" src="${items[i]}" alt="">`;
+
+    
     
 
 
     containerImg.innerHTML += image;
+   
+
+    
+
 }
 
 
@@ -80,7 +87,6 @@ buttonDown.addEventListener('click', function(){
     imgNext.classList.add('active');
 
 
-    
 });
 
 buttonUp.addEventListener('click', function(){

@@ -3,3 +3,73 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+
+
+.blue{
+    background-color: blue;
+}
+
+.grey{
+    background-color: grey;
+}
+
+.height{
+    height: 400px;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ridimensiona{
+    width: 100%;
+    
+}
+
+
+.sopra, .sotto {
+  position: absolute;
+  right: 40%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1em;
+}
+.sopra {
+  top: 0%;
+}
+.sotto {
+  bottom: 0%;
+  color: lightgray;
+}
+
+
+.testo{
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+  color: lightgray;
+}
+
+
+.opacity{
+    opacity: 0.5;
+}
+
+
+.active{
+    display: block;
+}
+
+.none{
+    display: none;
+}
+
+.slider img{
+    
+    width: 100%;
+}

@@ -40,29 +40,24 @@ for(let i = 0; i < items.length; i++){
 }
 
 
-const imagesDom = document.querySelectorAll('.slider img');
-console.log(imagesDom);
-imagesDom[0].classList.add('first', 'active' );
-console.log(imagesDom);
-imagesDom[imagesDom.length - 1].classList.add('last');
-console.log(imagesDom);
+
+let containerImgDestro = document.querySelector( '.col-2');
 
 
-let Active = document.querySelector('.slider .active');
 
-let imgActive= Active.classList;
+for(let i = 0; i < items.length; i++){
+
+    
+    
+    let image = `<div class ="ridimensiona"><img class="" src="${items[i]}" alt=""> </div>`;
+    console.log(image);
 
 
-let last = false;
-for (let i = 0; i < imgActive.length; i++) {
-  console.log(i, imgActive[i]);
-
-  if (imgActive[i] == 'last') {  
-    last = true;
-  }
+    containerImgDestro.innerHTML += image;
 }
 
-if(last == false ){
-    Active.classList.remove('active');
 
-}
+
+
+
+

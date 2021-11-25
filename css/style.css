@@ -20,10 +20,23 @@
     height: 400px;
 }
 
-img{
+ img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.slider{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.slider img{
+    display: none;
+    
+
 }
 
 .ridimensiona{
@@ -38,10 +51,13 @@ img{
   transform: translateX(-50%);
   color: white;
   font-size: 1em;
+  z-index: 10;
 }
 .sopra {
   top: 0%;
 }
+
+
 .sotto {
   bottom: 0%;
   color: lightgray;
@@ -61,15 +77,15 @@ img{
 }
 
 
-.active{
+.slider img.active{
     display: block;
 }
 
-.none{
-    display: none;
+.ridimensiona.active{
+    opacity: 1;
+
 }
 
-.slider img{
-    
-    width: 100%;
-}
+
+
+

@@ -33,7 +33,7 @@ let containerImg = document.querySelector( '.container-img .position-relative');
 for(let i = 0; i < items.length; i++){
     
     let image = `<img class="" src="${items[i]}" alt="">`;
-    console.log(image);
+    
 
 
     containerImg.innerHTML += image;
@@ -47,14 +47,50 @@ let containerImgDestro = document.querySelector( '.col-2');
 
 for(let i = 0; i < items.length; i++){
 
+    let image = `<div class ="ridimensiona opacity"><img class="" src="${items[i]}" alt=""> </div>`;
     
-    
-    let image = `<div class ="ridimensiona"><img class="" src="${items[i]}" alt=""> </div>`;
-    console.log(image);
 
 
     containerImgDestro.innerHTML += image;
 }
+
+
+
+
+const imagesBig = document.querySelectorAll('.slider img');
+imagesBig[0].classList.add('active');
+imagesBig[0].classList.add('first');
+imagesBig[imagesBig.length - 1].classList.add('last');
+
+
+
+
+
+
+
+
+const buttonUp = document.querySelector('.sopra');
+const buttonDown = document.querySelector('.sotto');
+
+buttonDown.addEventListener('click', function(){
+    let Active = document.querySelector('.slider img.active');
+
+    let imgNext = Active.nextElementSibling;
+    Active.classList.remove('active');
+    imgNext.classList.add('active');
+
+
+    
+});
+
+buttonUp.addEventListener('click', function(){
+    let Active = document.querySelector('.slider img.active');
+
+    let imgNext = Active.previousElementSibling;
+    Active.classList.remove('active');
+    imgNext.classList.add('active');
+});
+
 
 
 
